@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Compare Move (FCM)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Folder Compare Move (FCM)</h1>
+        <p>A Python utility to compare and move files between two folders</p>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>The Folder Compare Move (FCM) script is a Python utility designed to compare two folders and move files that are present in the source folder but missing in the destination folder. The script is useful for synchronizing files between two folders, ensuring that all files from the source folder are copied to the destination folder.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Compares files in the source and destination folders, including subdirectories</li>
+                <li>Moves files that are present in the source folder but missing in the destination folder</li>
+                <li>Creates a "Missed files" folder in the destination folder to store the moved files</li>
+                <li>Preserves the relative path structure of the source folder in the "Missed files" folder</li>
+            </ul>
+        </section>
+        <section id="requirements">
+            <h2>Requirements</h2>
+            <ul>
+                <li>Python 3.x</li>
+                <li><code>os</code> and <code>shutil</code> modules (included in the Python standard library)</li>
+            </ul>
+        </section>
+        <section id="usage">
+            <h2>Usage</h2>
+            <ol>
+                <li>Install Python 3.x on your system if you haven't already.</li>
+                <li>Download the <code>fcm.py</code> script and save it to a location of your choice.</li>
+                <li>Open a terminal or command prompt and navigate to the directory where you saved the script.</li>
+                <li>Run the script using the command <code>python fcm.py</code>.</li>
+                <li>Modify the <code>src</code> and <code>dest</code> variables in the script to specify the source and destination folders you want to compare.</li>
+            </ol>
+            <h3>Example Usage</h3>
+            <pre><code>src = r"D:\win\NIKON_SD\DCIM"
+dest = r"D:\win\DSLR Captured"
+move_missing_files(src, dest)</code></pre>
+        </section>
+        <section id="parameters">
+            <h2>Parameters</h2>
+            <ul>
+                <li><code>src</code>: The path to the source folder.</li>
+                <li><code>dest</code>: The path to the destination folder.</li>
+            </ul>
+        </section>
+        <section id="output">
+            <h2>Output</h2>
+            <p>The script will print a message for each file that is moved, indicating the file name, source directory, and destination directory.</p>
+        </section>
+        <section id="notes">
+            <h2>Notes</h2>
+            <ul>
+                <li>The script assumes that the source and destination folders are on the same file system.</li>
+                <li>The script does not handle file conflicts or overwrites. If a file with the same name already exists in the destination folder, it will be overwritten.</li>
+                <li>The script does not delete any files. It only moves files that are present in the source folder but missing in the destination folder.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Folder Compare Move (FCM)</p>
+    </footer>
+</body>
+</html>

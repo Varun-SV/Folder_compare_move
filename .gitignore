@@ -1,0 +1,31 @@
+# Ignore .env folder
+.env/
+
+# Ignore bytecode files
+*.pyc
+*.pyo
+
+# Ignore IDE and text editor files
+.vscode/
+.idea/
+*.iml
+*.vs
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore virtual environment files
+venv/
+env/
+
+# Ignore package manager files
+__pycache__/
+*.egg-info/
+
+# Ignore other unnecessary files
+*.tmp
+*.bak
